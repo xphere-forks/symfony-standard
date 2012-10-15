@@ -14,18 +14,18 @@ web_profiler:
 monolog:
     handlers:
         main:
-            type:  stream
-            path:  %kernel.logs_dir%/%kernel.environment%.log
+            type: stream
+            path: %kernel.logs_dir%/%kernel.environment%.log
             level: debug
         firephp:
-            type:  firephp
+            type: firephp
             level: info
         chromephp:
-            type:  chromephp
+            type: chromephp
             level: info
 
 assetic:
     use_controller: true
 
-#swiftmailer:
-#    delivery_address: me@example.com
+swiftmailer:
+    delivery_address: %mailer_admin%
