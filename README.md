@@ -22,7 +22,7 @@ to create a new project is to use it.
 If you don't have Composer yet, download it following the instructions on
 http://getcomposer.org/ or just run the following command:
 
-    curl -s http://getcomposer.org/installer | php
+    curl -s https://getcomposer.org/installer | php
 
 Then, use the `create-project` command to generate a new Symfony application:
 
@@ -89,21 +89,6 @@ take you through all the basic features of Symfony2.
 Once you're feeling good, you can move onto reading the official
 [Symfony2 book][5].
 
-A default bundle, `AcmeDemoBundle`, shows you Symfony2 in action. After
-playing with it, you can remove it by following these steps:
-
-  * delete the `src/Acme` directory;
-
-  * remove the routing entry referencing AcmeDemoBundle in `app/config/routing_dev.yml`;
-
-  * remove the AcmeDemoBundle from the registered bundles in `app/AppKernel.php`;
-
-  * remove the `web/bundles/acmedemo` directory;
-
-  * remove the `security.providers`, `security.firewalls.login` and
-    `security.firewalls.secured_area` entries in the `security.yml` file or
-    tweak the security configuration to fit your needs.
-
 What's inside?
 ---------------
 
@@ -139,17 +124,20 @@ It comes pre-configured with the following bundles:
   * [**AsseticBundle**][12] - Adds support for Assetic, an asset processing
     library
 
+  * [**JMSSecurityExtraBundle**][13] - Allows security to be added via
+    annotations
+
+  * [**JMSDiExtraBundle**][14] - Adds more powerful dependency injection
+    features
+
   * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
     the web debug toolbar
 
   * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
     configuring and working with Symfony distributions
 
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
+  * [**SensioGeneratorBundle**][15] (in dev/test env) - Adds code generation
     capabilities
-
-  * **AcmeDemoBundle** (in dev/test env) - A demo bundle with some example
-    code
 
 All libraries and bundles included in the Symfony Standard Edition are
 released under the MIT or BSD license.
